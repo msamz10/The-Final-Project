@@ -577,7 +577,7 @@ PRICING
 
 .pricing__para {
   text-align: center;
-  width: 600px;
+
   margin-top: 16px;
 }
 
@@ -1128,11 +1128,8 @@ footer {
   }
 
   .work__h3 {
-    width: 80%;
-  }
-
-  .work__para {
-    width: 80%;
+    text-align: center;
+    margin-bottom: 48px;
   }
 
   .steps__descriptions {
@@ -1237,13 +1234,35 @@ footer {
 
 @media (max-width: 850px) {
   .features__services {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .features__service {
-    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 56px;
+  }
+
+  .service__img--container {
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  .price__subscription {
+    width: 75%;
+    margin-right: 0;
+  }
+
+  .price__button,
+  .price__button--business {
+    width: 100%;
   }
 
   .client-profile--wrapper {
@@ -1261,4 +1280,20 @@ footer {
   .slick-pagination {
     width: 84px;
   }
+
+  .get-started--wrapper {
+    width: 100%;
+  }
+
+  .footer__container {
+
+    justify-content: center;
+    
+  }
+
+  .footer--info {
+    align-items: center;
+  }
+
+
 }
