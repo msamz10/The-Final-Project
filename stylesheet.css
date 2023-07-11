@@ -267,7 +267,7 @@ HEADER
   width: 100%;
   border: 2px solid rgba(226, 232, 240);
   border-radius: 100px;
-  padding: 16px 100px 16px 28px;
+  padding: 16px 20px;
   line-height: 1;
   box-sizing: border-box;
   border-color: none;
@@ -1206,7 +1206,7 @@ footer {
   }
 
   .get-started {
-    width: 80%;
+   display: flex;
     padding-top: 32px;
   }
 
@@ -1235,7 +1235,7 @@ footer {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 870px) {
   .header__introduction {
     width: 80%;
 
@@ -1249,7 +1249,7 @@ footer {
 
 .header__email {
 width: 100%;
-font-size: 20px;
+
 }
 
 .btn {
@@ -1257,7 +1257,7 @@ font-size: 20px;
   width: 100%;
   padding: 16px 28px;
   margin-top: 12px;
-  font-size: 20px;
+  
 }
 
 .header__img--wrapper {
@@ -1330,13 +1330,26 @@ font-size: 20px;
     width: 84px;
   }
 
-  .get-started--wrapper {
-    width: 100%;
+  .get-started--container {
+  
+  height: 100%;
   }
 
-  .get-started__button {
+  .get-started--wrapper {
+  
     width: 90%;
-    padding: 15px 25px;
+    padding: 32px 0;
+  }
+
+  .get-started  {
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+
+  .button-wrapper {
+    margin-bottom: 12px;
   }
 
   .footer__container {
