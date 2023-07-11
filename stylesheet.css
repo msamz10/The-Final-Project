@@ -1072,6 +1072,8 @@ footer {
   h3 {
     text-align: center;
   }
+
+  
   .header__container,
   .steps__container {
     flex-direction: column;
@@ -1094,6 +1096,7 @@ footer {
     display: none;
   }
 
+ 
   .features__service {
     width: 50%;
   }
@@ -1233,6 +1236,37 @@ footer {
 }
 
 @media (max-width: 850px) {
+  .header__introduction {
+    width: 80%;
+
+    text-align: center;
+  }
+
+.header__form {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header__email {
+width: 100%;
+font-size: 20px;
+}
+
+.btn {
+  position: static;
+  width: 100%;
+  padding: 16px 28px;
+  margin-top: 12px;
+  font-size: 20px;
+}
+
+.header__img--wrapper {
+  width: 80%;
+}
+
+
+  
+
   .features__services {
     display: flex;
     flex-direction: column;
@@ -1250,8 +1284,21 @@ footer {
     margin-bottom: 56px;
   }
 
+  .features__introduction {
+    margin-bottom: 32px;
+
+  }
+
   .service__img--container {
     padding: 0;
+    margin-bottom: 24px;
+  }
+
+  .work__h3 {
+    margin-bottom: 32px;
+  }
+
+  .values__h3 {
     margin-bottom: 24px;
   }
 
@@ -1264,6 +1311,8 @@ footer {
   .price__button--business {
     width: 100%;
   }
+
+  
 
   .client-profile--wrapper {
     width: 100%;
@@ -1283,6 +1332,11 @@ footer {
 
   .get-started--wrapper {
     width: 100%;
+  }
+
+  .get-started__button {
+    width: 90%;
+    padding: 15px 25px;
   }
 
   .footer__container {
