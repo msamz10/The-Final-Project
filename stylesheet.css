@@ -541,7 +541,7 @@ VALUES
 }
 
 .values__trait--wrapper {
-  max-width: 50%;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -549,7 +549,6 @@ VALUES
 .values__trait {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .trait__h4 {
@@ -573,8 +572,6 @@ PRICING
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  
 }
 
 .pricing__para {
@@ -1075,7 +1072,6 @@ footer {
     text-align: center;
   }
 
-  
   .header__container,
   .steps__container {
     flex-direction: column;
@@ -1098,7 +1094,6 @@ footer {
     display: none;
   }
 
- 
   .features__service {
     width: 50%;
   }
@@ -1165,14 +1160,16 @@ footer {
     align-items: center;
   }
 
+  .values__trait {
+    justify-content: center;
+  }
+
   .trait__para {
     padding: 24px 0 36px;
   }
 
   .pricing__para {
     width: 70%;
-    
-    
   }
 
   .prices {
@@ -1209,7 +1206,7 @@ footer {
   }
 
   .get-started {
-   display: flex;
+    display: flex;
     padding-top: 32px;
   }
 
@@ -1239,37 +1236,31 @@ footer {
 }
 
 @media (max-width: 870px) {
-
   .header__introduction {
     width: 80%;
 
     text-align: center;
   }
 
-.header__form {
-  margin: 0 auto;
-  width: 100%;
-}
+  .header__form {
+    margin: 0 auto;
+    width: 100%;
+  }
 
-.header__email {
-width: 100%;
+  .header__email {
+    width: 100%;
+  }
 
-}
+  .btn {
+    position: static;
+    width: 100%;
+    padding: 16px 28px;
+    margin-top: 12px;
+  }
 
-.btn {
-  position: static;
-  width: 100%;
-  padding: 16px 28px;
-  margin-top: 12px;
-  
-}
-
-.header__img--wrapper {
-  width: 80%;
-}
-
-
-  
+  .header__img--wrapper {
+    width: 80%;
+  }
 
   .features__services {
     display: flex;
@@ -1290,7 +1281,6 @@ width: 100%;
 
   .features__introduction {
     margin-bottom: 32px;
-
   }
 
   .service__img--container {
@@ -1304,6 +1294,10 @@ width: 100%;
 
   .values__h3 {
     margin-bottom: 24px;
+  }
+
+  .values__trait {
+    width: 100%;
   }
 
   .price__subscription {
@@ -1340,24 +1334,18 @@ width: 100%;
     width: 84px;
   }
 
-  
-
   .get-started--container {
-  
-  height: 100%;
+    height: 100%;
   }
 
   .get-started--wrapper {
-  
     width: 90%;
     padding: 32px 0;
   }
 
-  .get-started  {
+  .get-started {
     display: flex;
     flex-direction: column;
-    
-    
   }
 
   .button-wrapper {
@@ -1365,14 +1353,10 @@ width: 100%;
   }
 
   .footer__container {
-
     justify-content: center;
-    
   }
 
   .footer--info {
     align-items: center;
   }
-
-
 }
