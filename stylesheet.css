@@ -1296,9 +1296,13 @@ footer {
     margin-bottom: 24px;
   }
 
-  .values__trait {
-    width: 100%;
+  .values__trait--wrapper {
+    width: 75%;
   }
+
+  .trait__para {
+    padding: 12px 0 24px;
+  } 
 
   .price__subscription {
     width: 75%;
