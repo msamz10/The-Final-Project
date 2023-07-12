@@ -13,6 +13,21 @@
     ></script>
   </head>
   <body>
+    <div class="menu__backdrop">
+      <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="menu__links">
+        <li class="menu__link link2__hover-effect">About</li>
+        <li class="menu__link link2__hover-effect">Blog</li>
+        <li class="menu__link link2__hover-effect">
+          <a class="a_color2" href="#pricing">Pricing </a>
+        </li>
+        <li class="menu__link link2__hover-effect">Contact us</li>
+        <li class="menu__link link2__hover-effect">Login</li>
+        <li class="menu2__link nav__link--primary">Sign up</li>
+      </ul>
+    </div>
     <section id="landing" class="fly-right">
       <nav class="nav__container">
         <div class="row">
@@ -35,21 +50,7 @@
             <button class="btn__menu" onclick="openMenu()">
               <i class="fas fa-bars"></i>
             </button>
-            <div class="menu__backdrop">
-              <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                <i class="fas fa-times"></i>
-              </button>
-              <ul class="menu__links">
-                <li class="menu__link link2__hover-effect">About</li>
-                <li class="menu__link link2__hover-effect">Blog</li>
-                <li class="menu__link link2__hover-effect">
-                  <a class="a_color2" href="#pricing">Pricing </a>
-                </li>
-                <li class="menu__link link2__hover-effect">Contact us</li>
-                <li class="menu__link link2__hover-effect">Login</li>
-                <li class="menu2__link nav__link--primary">Sign up</li>
-              </ul>
-            </div>
+            
           </div>
         </div>
       </nav>
@@ -606,89 +607,93 @@
       </section>
       <footer>
         <div class="container">
-          <div class="footer__container">
-            <div class="footer--info-wrapper">
-              <ul class="footer--info">
-                <li class="footer__heading">MAIN</li>
-                <li class="info__link info__hover-effect">Blog</li>
-                <li class="info__link info__hover-effect">FAQs</li>
-                <li class="info__link info__hover-effect">Support</li>
-                <li class="info__link info__hover-effect">About Us</li>
-              </ul>
-            </div>
-            <div class="footer--info-wrapper">
-              <ul class="footer--info">
-                <li class="footer__heading">PRODUCT</li>
-                <li class="info__link info__hover-effect">Log in</li>
-                <li class="info__link info__hover-effect">Personal</li>
-                <li class="info__link info__hover-effect">Business</li>
-                <li class="info__link info__hover-effect">Team</li>
-              </ul>
-            </div>
-            <div class="footer--info-wrapper">
-              <ul class="footer--info">
-                <li class="footer__heading">PRESS</li>
-                <li class="info__link info__hover-effect">Logos</li>
-                <li class="info__link info__hover-effect">Events</li>
-                <li class="info__link info__hover-effect">Stories</li>
-                <li class="info__link info__hover-effect">Office</li>
-              </ul>
-            </div>
-            <div class="footer--info-wrapper">
-              <ul class="footer--info">
-                <li class="footer__heading">TEAM</li>
-                <li class="info__link info__hover-effect">Career</li>
-                <li class="info__link info__hover-effect">Founders</li>
-                <li class="info__link info__hover-effect">Culture</li>
-                <li class="info__link info__hover-effect">Onboarding</li>
-              </ul>
-            </div>
-            <div class="footer--info-wrapper">
-              <ul class="footer--info">
-                <li class="footer__heading">LEGAL</li>
-                <li class="info__link info__hover-effect">QDPR</li>
-                <li class="info__link info__hover-effect">Privacy Policy</li>
-                <li class="info__link info__hover-effect">Terms of Service</li>
-                <li class="info__link info__hover-effect">Disclaimer</li>
-              </ul>
-            </div>
-          </div>
-
-          <hr class="breakline" />
-
-          <div class="footer__end">
-            <figure class="footer__logo-wrapper">
-              <img src="./Assets/logo2.svg" class="footer__logo" />
-              <h5 class="footer__h5">Treact Inc.</h5>
-            </figure>
-
-            <div class="footer__copyright">
-              &copy; 2018 Treact Inc. All Rights Reserved.
-            </div>
-            <div class="footer__lists">
-              <div class="footer__list">
-                <a href=""
-                  ><i
-                    class="fa-brands fa-facebook-f fa-size"
-                    style="color: #0c0d0d"
-                  ></i
-                ></a>
+          <div class="row">
+            <div class="footer__container">
+              <div class="footer--info-wrapper">
+                <ul class="footer--info">
+                  <li class="footer__heading">MAIN</li>
+                  <li class="info__link info__hover-effect">Blog</li>
+                  <li class="info__link info__hover-effect">FAQs</li>
+                  <li class="info__link info__hover-effect">Support</li>
+                  <li class="info__link info__hover-effect">About Us</li>
+                </ul>
               </div>
-              <div class="footer__list">
-                <a href=""
-                  ><i
-                    class="fa-brands fa-twitter fa-size"
-                    style="color: #0f0f10"
-                  ></i
-                ></a>
+              <div class="footer--info-wrapper">
+                <ul class="footer--info">
+                  <li class="footer__heading">PRODUCT</li>
+                  <li class="info__link info__hover-effect">Log in</li>
+                  <li class="info__link info__hover-effect">Personal</li>
+                  <li class="info__link info__hover-effect">Business</li>
+                  <li class="info__link info__hover-effect">Team</li>
+                </ul>
               </div>
-              <div class="footer__list">
-                <a href=""
-                  ><i
-                    class="fa-brands fa-youtube fa-size"
-                    style="color: #0f0f0f"
-                  ></i
-                ></a>
+              <div class="footer--info-wrapper">
+                <ul class="footer--info">
+                  <li class="footer__heading">PRESS</li>
+                  <li class="info__link info__hover-effect">Logos</li>
+                  <li class="info__link info__hover-effect">Events</li>
+                  <li class="info__link info__hover-effect">Stories</li>
+                  <li class="info__link info__hover-effect">Office</li>
+                </ul>
+              </div>
+              <div class="footer--info-wrapper">
+                <ul class="footer--info">
+                  <li class="footer__heading">TEAM</li>
+                  <li class="info__link info__hover-effect">Career</li>
+                  <li class="info__link info__hover-effect">Founders</li>
+                  <li class="info__link info__hover-effect">Culture</li>
+                  <li class="info__link info__hover-effect">Onboarding</li>
+                </ul>
+              </div>
+              <div class="footer--info-wrapper">
+                <ul class="footer--info">
+                  <li class="footer__heading">LEGAL</li>
+                  <li class="info__link info__hover-effect">QDPR</li>
+                  <li class="info__link info__hover-effect">Privacy Policy</li>
+                  <li class="info__link info__hover-effect">
+                    Terms of Service
+                  </li>
+                  <li class="info__link info__hover-effect">Disclaimer</li>
+                </ul>
+              </div>
+            </div>
+
+            <hr class="breakline" />
+
+            <div class="footer__end">
+              <figure class="footer__logo-wrapper">
+                <img src="./Assets/logo2.svg" class="footer__logo" />
+                <h5 class="footer__h5">Treact Inc.</h5>
+              </figure>
+
+              <div class="footer__copyright">
+                &copy; 2018 Treact Inc. All Rights Reserved.
+              </div>
+              <div class="footer__lists">
+                <div class="footer__list">
+                  <a href=""
+                    ><i
+                      class="fa-brands fa-facebook-f fa-size"
+                      style="color: #0c0d0d"
+                    ></i
+                  ></a>
+                </div>
+                <div class="footer__list">
+                  <a href=""
+                    ><i
+                      class="fa-brands fa-twitter fa-size"
+                      style="color: #0f0f10"
+                    ></i
+                  ></a>
+                </div>
+                <div class="footer__list">
+                  <a href=""
+                    ><i
+                      class="fa-brands fa-youtube fa-size"
+                      style="color: #0f0f0f"
+                    ></i
+                  ></a>
+                </div>
               </div>
             </div>
           </div>

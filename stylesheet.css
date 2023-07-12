@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -156,6 +157,9 @@ h5 {
   display: none;
 }
 
+
+
+
 .menu__backdrop {
   position: fixed;
   background-color: #fff;
@@ -166,24 +170,31 @@ h5 {
   right: 0;
   margin: 30px;
   border-radius: 8px;
-  max-width: 1210px;
+  
 
-  z-index: 100;
+
+  z-index: 10;
   display: flex;
-  align-items: space-around;
   justify-content: center;
-  transition: all 300ms ease;
-  visibility: hidden;
+  
   opacity: 0;
+  transform: translateX(100%);
+  transition: all 300ms ease;
+  
+  
+  
+  
 }
 
 .menu--open .menu__backdrop {
-  visibility: visible;
   opacity: 1;
+  transform: translateX(0);
+
 }
 
 .btn__menu--close {
   position: absolute;
+  display: block;
   font-size: 24px;
   right: 20px;
   top: 10px;
@@ -193,6 +204,7 @@ h5 {
 }
 
 .btn__menu--close:hover {
+  
   cursor: pointer;
   color: #6415ff;
 }
@@ -336,6 +348,7 @@ HEADER
   width: 70%;
   opacity: 0.5;
 }
+
 
 /* 
 
@@ -1135,7 +1148,6 @@ footer {
   }
 
   .work__h3 {
-    
     margin-bottom: 48px;
   }
 
@@ -1243,8 +1255,20 @@ footer {
 }
 
 @media (max-width: 870px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
   .header__introduction {
-    width: 80%;
+    width: 100%;
 
     text-align: center;
   }
@@ -1266,7 +1290,7 @@ footer {
   }
 
   .header__img--wrapper {
-    width: 80%;
+    width: 100%;
   }
 
   .features__services {
@@ -1290,30 +1314,48 @@ footer {
     margin-bottom: 32px;
   }
 
+  .features__para {
+    font-size: 14px;
+  }
+
   .service__img--container {
     padding: 0;
     margin-bottom: 24px;
   }
 
-  .work__h3 {
-    margin-bottom: 32px;
-    
+  .work__description {
+    width: 100%;
   }
 
+  .work__h3 {
+    margin-bottom: 32px;
+  }
+
+  .steps__descriptions {
+    width: 100%;
+  }
+
+  .steps__h4 {
+    font: 20px;
+  }
+
+  .values__description {
+    width: 100%;
+  }
   .values__h3 {
     margin-bottom: 24px;
   }
 
   .values__trait--wrapper {
-    width: 75%;
+    width: 100%;
   }
 
   .trait__para {
     padding: 12px 0 24px;
-  } 
+  }
 
   .price__subscription {
-    width: 75%;
+    width: 100%;
     margin-right: 0;
   }
 
@@ -1346,12 +1388,16 @@ footer {
     width: 84px;
   }
 
+  .get-started__h5 {
+    font-size: 24px;
+  }
+
   .get-started--container {
     height: 100%;
   }
 
   .get-started--wrapper {
-    width: 90%;
+    width: 100%;
     padding: 32px 0;
   }
 
